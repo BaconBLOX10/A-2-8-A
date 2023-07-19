@@ -7,7 +7,7 @@ const Constraint = Matter.Constraint;
 //variáveis
 var engine, world, backgroundImg;
 var canvas, angle, tower, ground, cannon, boat;
-
+var rosa
 //matriz para balas e barcos
 var balls = [];
 var boats = [];
@@ -212,7 +212,7 @@ function showBoats() {
       //torre e barco inteiro
       var collision = Matter.SAT.collides(this.tower, boats[i].body);
       //if que verifica se houve colisão com um barco bom 
-     
+
       if (collision.collided && !boats[i].isBroken) {
         //fazer um if para poder tocar a risada, aluno
         if (!SOM_RISADA_DO_PIRATA.isPlaying()) {
